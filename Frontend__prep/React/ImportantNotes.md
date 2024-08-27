@@ -2,3 +2,5 @@
 
 2. Be cauios when updating state variable using setVariable() method, correct way of incrementing/ modifying using prev Value, do as below
 setTimerValue((prevValue) => prevValue + 0.1);
+
+3. Explore topics : side effects, error handling

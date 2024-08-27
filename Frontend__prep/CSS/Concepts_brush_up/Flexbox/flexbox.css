@@ -1,0 +1,45 @@
+h1 {
+   text-align: center;
+   margin-top: 1rem;
+   border-bottom: 1px solid aquamarine;
+}
+
+.flexbox-container {
+   display: flex;
+   background-color: blanchedalmond;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+/* Below items will now work as flex items, all the default styles for respective tags 
+will b overridden, for ex: div will no longer be a block level element */
+   
+.flexbox-item {
+   width: 200px;
+   margin: 10px; 
+   border: 3px solid #333; 
+   background-color: #dfdfdf;
+   text-align: center;
+}
+
+.flexbox-item-1 {
+   min-height: 100px;
+   flex-grow: 2;
+   flex-basis: 0;
+   order:3;
+}
+
+.flexbox-item-2 {
+   min-height: 200px;
+   align-self: center;
+   flex-grow: 3;
+}
+
+.flexbox-item-3 {
+   min-height: 300px;
+   flex-shrink: 0;
+}
+
+/* Order works different do trial */

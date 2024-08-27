@@ -1,0 +1,27 @@
+<div class="inventory">
+   <h2>Product Inventory</h2>
+   <table>
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Price</th>
+               <th>Description</th>
+               <th>Category</th>
+               <th>Actions</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let product of products">
+               <td>{{ product.name }}</td>
+               <td>{{ product.price | currency }}</td>
+               <td>{{ product.description }}</td>
+               <td>{{ product.category }}</td>
+               <td>
+                   <button mat-button (click)="openEditDialog(product)">Edit</button>
+                   <button mat-button color="warn" (click)="deleteProduct(product.id)">Delete</button>
+               </td>
+           </tr>
+       </tbody>
+   </table>
+</div>
+

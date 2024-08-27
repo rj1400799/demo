@@ -1,0 +1,56 @@
+h1 {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+/* body {
+
+} */
+
+.parent {
+  background-color: aquamarine;
+  height: 100vh;
+  width: 50%;
+  position: relative;
+  left: 10px;
+}
+
+.child {
+  height: 100px;
+  width: 30%;
+}
+
+.child-1 {
+   position: fixed;
+   top:100px;
+   left: 200px;
+   /* top: 0px; */
+  background-color: aqua;
+}
+
+.child-2 {
+  color: white;
+  background-color: black;
+  width: 35%;
+  position: sticky;
+  top: 500px;
+  left:100px;
+  bottom: 500px;
+}
+
+.child-3 {
+   position: sticky;
+   top:20px;
+   left: 0px;
+   right: 200px;
+   bottom: 20px;
+  background-color: blue;
+}
+
+.sticky {
+   background-color: antiquewhite;
+   height: 300px;
+   width: 100px;
+   position: sticky;
+   top:10px;
+}
